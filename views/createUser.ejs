@@ -1,0 +1,25 @@
+<%- include("templates/header") %> 
+    create user
+    <form action='/createUser' method='post'>
+        <div class="row">
+            <div class="col-3">
+                <input class="form-control" name='username' type='text' placeholder='name'><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <input class="form-control" name='email' type='email' placeholder='email'><br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <input class="form-control" name='password' type='password' placeholder='password'><br>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-2">
+            <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </form>
+<%- include("templates/footer") %> 
